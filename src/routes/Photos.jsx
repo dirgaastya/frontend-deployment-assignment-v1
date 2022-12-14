@@ -34,6 +34,9 @@ const Photos = () => {
             .then((data) => {
                 setPhotos(data);
                 setLoading(false);
+            })
+            .catch((error) => {
+                setError(error);
             });
     }, [sort, submited]);
 
