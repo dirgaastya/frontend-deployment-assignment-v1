@@ -21,7 +21,7 @@ const Photos = () => {
     };
 
     const getPhoto = async () => {
-        const response = await fetch("http://localhost:3001/photos");
+        const response = await fetch("https://gallery-app-server.vercel.app/photos");
         const data = await response.json();
         setPhotos(data);
         setLoading(false);
